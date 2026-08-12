@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -28,11 +28,10 @@
                     <li><a href="#sobre">SOBRE</a></li>
                 </ul>
             </nav>
-            <a href="#" class="contact">FALE CONOSCO</a>
+            <a href="#" class="contact" id="contato">FALE CONOSCO</a>
         </header> <!--FIM CABEÇALHO E NAVEGAÇÃO-->
-
         <!--SESSAO Preview Principal-->
-        <section class="section">
+        <section class="section" id="home">
             <div class="layout-section">
                 <div class="section-one">
                     <span>SOM PURO. ZERO RUÍDO.</span>
@@ -40,14 +39,32 @@
                     <p>
                     O Sonic Pure oferece uma experiência auditiva incomparável, com design requintado e tecnologia de ponta.
                     </p>
-                    <button>SAIBA MAIS<i class="bi bi-arrow-right"></i></button>
+                    <button id="btn-saiba-mais">SAIBA MAIS<i class="bi bi-arrow-right"></i></button>
                 </div>
             </div>
             <div class="section-img">
-                    <img src="/assets/img/sonic_pure_main.png" alt="">
+                    <img src="./assets/img/sonic_pure_main.png" alt="">
                 </div>
         </section><!--FIM SESSAO-->
 
+        <div class="fale-conosco" id="fale-conosco">
+                <div class="fale-title">
+                    <h3>FALE CONOSCO</h3>
+                </div>
+                <form id="formulario">
+                    <label>Digite seu nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Pedro" required/>
+                    <label>Digite seu sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Silva" required/>
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="example@example.com" required/>
+                    <label>Digite sua mensagem abaixo:</label>
+                    <textarea id="textarea" class="textarea" required placeholder="Digite sua mensagem abaixo..."></textarea>
+                </form>
+                <div class="btn-send">
+                <button type="submit" id="send-btn">Enviar</button>
+                </div>
+            </div>
 
         <!--sessao Exposição do produto-->
         <section class="section-fotos" id="exposicao">
@@ -58,15 +75,15 @@
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="/assets/img/sonic_pure_fabric.png">
+                        <img src="./assets/img/sonic_pure_fabric.png">
                         <span>ACABAMENTO EXCLUSIVO<br> Detalhes meticulosos.<br> Requinte em todos os aspectos.<br>__</span>
                     </div>
                     <div class="card-img">
-                        <img src="/assets/img/sonic_pure_aluminum.png" width="">
+                        <img src="./assets/img/sonic_pure_aluminum.png" width="">
                         <span>ALUMÍNIO ANODIZADO<br> Fabricação de precisão.<br> Refinamento atemporal.<br>__</span>
                     </div>
                     <div class="card-img">
-                        <img src="/assets/img//sonic_pure_leather.png">
+                        <img src="./assets/img//sonic_pure_leather.png">
                         <span>COURO PREMIUM<br>Ultramacio. Feito para<br>conforto infinito.<br>__</span>
                     </div>
                 </div>
@@ -119,7 +136,7 @@
 
             <div class="ligh-center">
                 <div class="img-sobre">
-                    <img src="/assets/img/sonic_pure_leather.png">
+                    <img src="./assets/img/sonic_pure_leather.png">
                 </div>
 
                 <div class="list-info">
@@ -145,27 +162,9 @@
             <span>Desenvolvidor por: Rogério Santana</span>
         </footer>
 
-        <!--
-        <section class="section-contato">
-            <div class="title-contato">
-                <h2>Entre em contato conosco e tire suas duvidas.</h2>
-            </div>
-                <form>
-                    <div class="input-group"></div>
-                        <label>Nome</label>
-                        <input type="text" name="nome" placeholder="Digite seu nome"/>
-                        <label>Sobrenome</label>
-                        <input type="text" name="sobrenome" placeholder="Digite seu sobrenome"/>
-                        <label>E-mail</label>
-                        <input type="email" name="email" placeholder="Digite seu email"/>
-                        <label>Digite uma mensagem abaixo</label>
-                        <textarea>Nos envie uma mensagem :)</textarea>
-                    </div>
-                </form>
-        </section>
-    -->
+        
 
-  <script src="/assets/backend/script.js" defer></script>
+  <script src="./assets/backend/script.js" defer></script>
 
 </body>
 </html>

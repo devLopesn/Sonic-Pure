@@ -1,3 +1,21 @@
+//Abrir dialog - fale conosco
+    let faleConosco = document.getElementById("fale-conosco");
+    let contato = document.getElementById("contato");
+    let sendbtn = document.getElementById("send-btn");
+    let btnSaiba = document.getElementById("btn-saiba-mais");
+
+    btnSaiba.addEventListener("click", () =>{
+        location.href = "#exposicao";
+    })
+    contato.addEventListener('click', ()=>{
+        faleConosco.classList.toggle('conosco-show');   
+    })
+
+    sendbtn.addEventListener('click', function(){
+        alert("Obrigado por nos enviar uma mensagem")
+        location.reload();
+    })
+
 /*
         Efeito de opacidade do menu
             Navegador irá ficar escutando toda vez que rolar o scroll do mouse
