@@ -6,7 +6,7 @@ Este projeto é uma landing page de alta fidelidade para o **Sonic Pure**, um fo
 - **HTML5**: Estrutura semântica.
 - **CSS3**: Estilização avançada, Flexbox e Grid.
 - **Google Fonts**: Fontes *Playfair Display* e *Inter*.
-- **Bootstrap Icons**: Utilizados icones do bootstrap.
+- **Bootstrap**: Utilizados icones do bootstrap & Estilização de Formularios.
 
 ## ✨ Funcionalidades
 - [x] Layout Responsivo (Mobile, Tablet e Desktop).
