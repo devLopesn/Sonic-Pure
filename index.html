@@ -1,170 +1,304 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sonic Pure</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
     <!--CABEÇALHO E NAVAGEÇÃO-->
-        <header class="home">
-            <!--Titulo-->
-            <div class="title">
-                <h3>SONIC PURE</h3>
-            </div>
+    <header class="home">
+      <!--Titulo-->
+      <div class="title">
+        <h3>SONIC PURE</h3>
+      </div>
 
-            <!--Navegação-->
-            <nav>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#exposicao">EXPOSIÇÃO</a></li>
-                    <li><a href="#tecnologia">TECNOLOGIA</a></li>
-                    <li><a href="#sobre">SOBRE</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="contact" id="contato">FALE CONOSCO</a>
-        </header> <!--FIM CABEÇALHO E NAVEGAÇÃO-->
-        <!--SESSAO Preview Principal-->
-        <section class="section" id="home">
-            <div class="layout-section">
-                <div class="section-one">
-                    <span>SOM PURO. ZERO RUÍDO.</span>
-                    <h2>Aproveite cada momento ao máximo.</h2>
-                    <p>
-                    O Sonic Pure oferece uma experiência auditiva incomparável, com design requintado e tecnologia de ponta.
-                    </p>
-                    <button id="btn-saiba-mais">SAIBA MAIS<i class="bi bi-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="section-img">
-                    <img src="./assets/img/sonic_pure_main.png" alt="">
-                </div>
-        </section><!--FIM SESSAO-->
+      <!--Navegação-->
+      <nav>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#exposicao">EXPOSIÇÃO</a></li>
+          <li><a href="#tecnologia">TECNOLOGIA</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="contact" id="contato"><i class="bi bi-envelope-arrow-down-fill"></i>FALE CONOSCO</a>
+    </header>
+    <!--FIM CABEÇALHO E NAVEGAÇÃO-->
+    <!--SESSAO Preview Principal-->
+    <section class="section" id="home">
+      <div class="layout-section">
+        <div class="section-one">
+          <span>SOM PURO. ZERO RUÍDO.</span>
+          <h2>Aproveite cada momento ao máximo.</h2>
+          <p>
+            O Sonic Pure oferece uma experiência auditiva incomparável, com
+            design requintado e tecnologia de ponta.
+          </p>
+          <button id="btn-saiba-mais">
+            SAIBA MAIS<i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="section-img">
+        <img src="./assets/img/sonic_pure_main.png" alt="" />
+      </div>
+    </section>
+    <!--FIM SESSAO-->
 
-        <div class="fale-conosco" id="fale-conosco">
-                <div class="fale-title">
-                    <h3>FALE CONOSCO</h3>
+    <!-- <div class="fale-conosco" id="fale-conosco">
+      <div class="fale-title">
+        <h3>FALE CONOSCO</h3>
+      </div>
+      <form id="formulario">
+        <label>Digite seu nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Pedro" required />
+        <label>Digite seu sobrenome:</label>
+        <input
+          type="text"
+          name="sobrenome"
+          id="sobrenome"
+          placeholder="Silva"
+          required
+        />
+        <label>Digite seu E-mail:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@example.com"
+          required
+        />
+        <label>Digite sua mensagem abaixo:</label>
+        <textarea
+          id="textarea"
+          class="textarea"
+          required
+          placeholder="Digite sua mensagem abaixo..."
+        ></textarea>
+      </form>
+      <div class="btn-send">
+        <button type="submit" id="send-btn">Enviar</button>
+      </div>
+    </div> -->
+
+    <!--sessao Exposição do produto-->
+    <section class="section-fotos" id="exposicao">
+      <div class="sessao-fotos">
+        <div class="title-fotos">
+          <h3>Exposição do produto</h3>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/img/sonic_pure_fabric.png" />
+            <span
+              >ACABAMENTO EXCLUSIVO<br />
+              Detalhes meticulosos.<br />
+              Requinte em todos os aspectos.<br />__</span
+            >
+          </div>
+          <div class="card-img">
+            <img src="./assets/img/sonic_pure_aluminum.png" width="" />
+            <span
+              >ALUMÍNIO ANODIZADO<br />
+              Fabricação de precisão.<br />
+              Refinamento atemporal.<br />__</span
+            >
+          </div>
+          <div class="card-img">
+            <img src="./assets/img//sonic_pure_leather.png" />
+            <span
+              >COURO PREMIUM<br />Ultramacio. Feito para<br />conforto
+              infinito.<br />__</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FIM SESSAO EXPOSIÇÃO-->
+
+    <!--SESSAO SOBRE A TECNOLOGIA SONIC PURE-->
+    <section class="section-tec" id="tecnologia">
+      <div class="sessao-fotos">
+        <div class="title-fotos">
+          <h3>NOSSA TECNOLOGIA SONIC PURE</h3>
+        </div>
+
+        <div class="bloco-tec">
+          <div class="card-tec">
+            <h4>
+              "A Ciência do Som. A Arte do Silêncio."
+              <i class="bi bi-file-earmark-music"></i>
+            </h4>
+            <p>
+              O Sonic Pure não é apenas um fone de ouvido; é uma obra-prima<br />
+              da engenharia acústica, projetada para quem não aceita nada menos
+              que a perfeição sonora.
+            </p>
+          </div>
+        </div>
+
+        <div class="cards-tec">
+          <div class="card-desc">
+            <h4>1. Performance que Acompanha seu Ritmo</h4>
+            <p>
+              Graças à nossa arquitetura de baixo consumo, o Sonic Pure oferece
+              até 60 horas de reprodução contínua. Com a tecnologia Flash
+              Charge, apenas 10 minutos de carga via USB-C garantem mais 5 horas
+              de música.
+            </p>
+          </div>
+
+          <div class="card-desc">
+            <h4>2. Som de Alta Resolução (Hi-Res Audio)</h4>
+            <p>
+              No coração do Sonic Pure estão nossos drivers dinâmicos de 40mm
+              com diafragma de polímero de cristal líquido. Esta tecnologia
+              permite uma resposta de frequência ultra-ampla (de 4Hz a 40kHz),
+              entregando graves profundos e potentes, médios cristalinos e
+              agudos detalhados que revelam nuances na música que você nunca
+              ouviu antes.
+            </p>
+          </div>
+
+          <div class="card-desc">
+            <h4>3. Conexão Sem Perdas e Multiponto</h4>
+            <p>
+              Utilizando a tecnologia Bluetooth 5.3 com suporte aos codecs LDAC
+              e aptX Adaptive, garantimos uma transmissão de áudio sem fio com
+              qualidade de estúdio. Além disso, o recurso Smart Switch permite
+              que você se conecte a dois dispositivos simultaneamente,
+              alternando entre seu notebook e smartphone de forma instantânea e
+              inteligente.
+            </p>
+          </div>
+
+          <div class="card-desc">
+            <h4>4. Cancelamento Ativo de Ruído de Próxima Geração</h4>
+            <p>
+              Equipado com o chip Acoustic-X1, o Sonic Pure utiliza um sistema
+              de 8 microfones internos e externos que analisam o ruído ambiente
+              48.000 vezes por segundo. Nossa tecnologia de cancelamento
+              adaptativo cria uma onda sonora inversa precisa, eliminando
+              distrações e permitindo que você mergulhe totalmente na sua
+              música, mesmo nos ambientes mais barulhentos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FIM SESSAO-->
+
+    <!--SESSÃO SOBRE A SONIC PURE-->
+    <section class="phone-loja" id="sobre">
+      <div class="sobre-title">
+        <h3>SOBRE Á SONIC PURE</h3>
+      </div>
+
+      <div class="ligh-center">
+        <div class="img-sobre">
+          <img src="./assets/img/sonic_pure_leather.png" />
+        </div>
+
+        <div class="list-info">
+          <div class="title-sobre">
+            <h1>Nossa Jornada pela Pureza <br />Sonora</h1>
+            <span>Onde a Engenharia Encontra a Emoção.</span>
+          </div>
+
+          <div class="sobre-info">
+            <p>
+              A Sonic Pure nasceu de uma insatisfação compartilhada por músicos,
+              engenheiros de som e audiófilos: a perda da essência. Em um mundo
+              de áudio comprimido e ruído constante, percebemos que a verdadeira
+              magia da música estava sendo silenciada.
+            </p>
+
+            <p>
+              Nossa missão é simples, mas ambiciosa:
+              <strong
+                >redefinir o silêncio para que você possa ouvir o que realmente
+                importa.</strong
+              >
+            </p>
+
+            <p>
+              Desde o nosso primeiro protótipo em um pequeno laboratório de
+              acústica, cada decisão — da escolha do couro premium à calibração
+              do nosso chip Acoustic-X1 — foi guiada por um único objetivo:
+              criar uma transparência sonora absoluta. Não queremos apenas que
+              você ouça música; queremos que você sinta a respiração do cantor,
+              a vibração das cordas e a intenção por trás de cada nota.
+            </p>
+
+            <p>
+              Na Sonic Pure, não fabricamos apenas fones de ouvido. Nós
+              construímos portais para experiências imersivas, onde a tecnologia
+              de ponta desaparece para dar lugar ao que é puramente humano: a
+              emoção do som.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FIM SESSAO-->
+
+    <!--SESSÃO SOBRE A SONIC PURE-->
+    <section class="phone-loja bg-light" id="sobre">
+      <div class="">
+        <div class="form-group " style="width: 90vw;">
+            <div class="card-body p-4">
+                <div class="p-2">
+                <h2 class="mb-1">Formulario de Contato <i class="bi bi-envelope-fill"></i></h2>
+                <p class="mb-1">Preencha os campos abaixo para falar conosco.<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                </svg></p>
                 </div>
-                <form id="formulario">
-                    <label>Digite seu nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Pedro" required/>
-                    <label>Digite seu sobrenome:</label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Silva" required/>
-                    <label>Digite seu E-mail:</label>
-                    <input type="email" name="email" id="email" placeholder="example@example.com" required/>
-                    <label>Digite sua mensagem abaixo:</label>
-                    <textarea id="textarea" class="textarea" required placeholder="Digite sua mensagem abaixo..."></textarea>
+
+                <form class="form-group border shadow p-5">
+                    <div class="mb-4">
+                        <label for="nome" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg> Nome:</label>
+                        <input class="form-control" type="text" name="nome" id="nome" required placeholder="Ex: Pedro">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label"><i class="bi bi-envelope"></i> Email:</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Ex: pedro@example.com" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="assunto" class="form-label"><i class="bi bi-file-text-fill"></i> Assunto:</label>
+                        <textarea class="form-control" id="area" placeholder="Escreva aqui seu assunto para nós!" required></textarea>
+                    </div>
+
+                    <button class="btn btn-secondary" id="sendbtn">Enviar</button>
                 </form>
-                <div class="btn-send">
-                <button type="submit" id="send-btn">Enviar</button>
-                </div>
             </div>
+        </div>
+    </div>
+    </section>
 
-        <!--sessao Exposição do produto-->
-        <section class="section-fotos" id="exposicao">
-            <div class="sessao-fotos">
-                <div class="title-fotos">
-                    <h3>Exposição do produto</h3>
-                </div>
+    <footer>
+      <span>Desenvolvidor por: Rogério Santana</span>
+    </footer>
 
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./assets/img/sonic_pure_fabric.png">
-                        <span>ACABAMENTO EXCLUSIVO<br> Detalhes meticulosos.<br> Requinte em todos os aspectos.<br>__</span>
-                    </div>
-                    <div class="card-img">
-                        <img src="./assets/img/sonic_pure_aluminum.png" width="">
-                        <span>ALUMÍNIO ANODIZADO<br> Fabricação de precisão.<br> Refinamento atemporal.<br>__</span>
-                    </div>
-                    <div class="card-img">
-                        <img src="./assets/img//sonic_pure_leather.png">
-                        <span>COURO PREMIUM<br>Ultramacio. Feito para<br>conforto infinito.<br>__</span>
-                    </div>
-                </div>
-            </div>
-        </section><!--FIM SESSAO EXPOSIÇÃO-->
+    <script src="./assets/backend/script.js" defer></script>
+        <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!--SESSAO SOBRE A TECNOLOGIA SONIC PURE-->
-        <section class="section-tec" id="tecnologia">
-            <div class="sessao-fotos">
-                <div class="title-fotos">
-                    <h3>NOSSA TECNOLOGIA SONIC PURE</h3>
-                </div>
-
-                <div class="bloco-tec">
-                    <div class="card-tec">
-                        <h4>"A Ciência do Som. A Arte do Silêncio." <i class="bi bi-file-earmark-music"></i></h4>
-                        <p>O Sonic Pure não é apenas um fone de ouvido; é uma obra-prima<br> da engenharia acústica, projetada para quem não aceita nada menos que a perfeição sonora.</p>
-                    </div>
-                </div>
-
-                <div class="cards-tec">
-                    <div class="card-desc">
-                        <h4>1. Performance que Acompanha seu Ritmo</h4>
-                        <p>Graças à nossa arquitetura de baixo consumo, o Sonic Pure oferece até 60 horas de reprodução contínua. Com a tecnologia Flash Charge, apenas 10 minutos de carga via USB-C garantem mais 5 horas de música.</p>
-                    </div>
-
-                     <div class="card-desc">
-                        <h4>2. Som de Alta Resolução (Hi-Res Audio)</h4>
-                        <p>No coração do Sonic Pure estão nossos drivers dinâmicos de 40mm com diafragma de polímero de cristal líquido. Esta tecnologia permite uma resposta de frequência ultra-ampla (de 4Hz a 40kHz), entregando graves profundos e potentes, médios cristalinos e agudos detalhados que revelam nuances na música que você nunca ouviu antes.</p>
-                    </div>
-
-                     <div class="card-desc">
-                        <h4>3. Conexão Sem Perdas e Multiponto</h4>
-                        <p>Utilizando a tecnologia Bluetooth 5.3 com suporte aos codecs LDAC e aptX Adaptive, garantimos uma transmissão de áudio sem fio com qualidade de estúdio. Além disso, o recurso Smart Switch permite que você se conecte a dois dispositivos simultaneamente, alternando entre seu notebook e smartphone de forma instantânea e inteligente.</p>
-                    </div>
-
-                     <div class="card-desc">
-                        <h4>4. Cancelamento Ativo de Ruído de Próxima Geração</h4>
-                        <p>Equipado com o chip Acoustic-X1, o Sonic Pure utiliza um sistema de 8 microfones internos e externos que analisam o ruído ambiente 48.000 vezes por segundo. Nossa tecnologia de cancelamento adaptativo cria uma onda sonora inversa precisa, eliminando distrações e permitindo que você mergulhe totalmente na sua música, mesmo nos ambientes mais barulhentos.</p>
-                    </div>
-                </div>
-            </div>
-        </section><!--FIM SESSAO-->
-
-        <!--SESSÃO SOBRE A SONIC PURE-->
-        <section class="phone-loja" id="sobre">
-            <div class="sobre-title">
-                <h3>SOBRE Á SONIC PURE</h3>
-            </div>
-
-            <div class="ligh-center">
-                <div class="img-sobre">
-                    <img src="./assets/img/sonic_pure_leather.png">
-                </div>
-
-                <div class="list-info">
-                    <div class="title-sobre">
-                        <h1>Nossa Jornada pela Pureza <br>Sonora</h1>
-                        <span>Onde a Engenharia Encontra a Emoção.</span>
-                    </div>
-
-                    <div class="sobre-info">
-                        <p>A Sonic Pure nasceu de uma insatisfação compartilhada por músicos, engenheiros de som e audiófilos: a perda da essência. Em um mundo de áudio comprimido e ruído constante, percebemos que a verdadeira magia da música estava sendo silenciada.</p>
-                    
-                        <p>Nossa missão é simples, mas ambiciosa: <strong>redefinir o silêncio para que você possa ouvir o que realmente importa.</strong></p>
-                    
-                        <p>Desde o nosso primeiro protótipo em um pequeno laboratório de acústica, cada decisão — da escolha do couro premium à calibração do nosso chip Acoustic-X1 — foi guiada por um único objetivo: criar uma transparência sonora absoluta. Não queremos apenas que você ouça música; queremos que você sinta a respiração do cantor, a vibração das cordas e a intenção por trás de cada nota.</p>
-
-                        <p>Na Sonic Pure, não fabricamos apenas fones de ouvido. Nós construímos portais para experiências imersivas, onde a tecnologia de ponta desaparece para dar lugar ao que é puramente humano: a emoção do som.</p>
-                    </div>
-                </div>
-            </div>
-        </section><!--FIM SESSAO-->
-
-        <footer>
-            <span>Desenvolvidor por: Rogério Santana</span>
-        </footer>
-
-        
-
-  <script src="./assets/backend/script.js" defer></script>
-
-</body>
+  </body>
 </html>

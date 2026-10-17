@@ -1,19 +1,16 @@
-//Abrir dialog - fale conosco
-    let faleConosco = document.getElementById("fale-conosco");
-    let contato = document.getElementById("contato");
-    let sendbtn = document.getElementById("send-btn");
-    let btnSaiba = document.getElementById("btn-saiba-mais");
+    const sendBtn = document.getElementById("sendbtn")
 
-    btnSaiba.addEventListener("click", () =>{
-        location.href = "#exposicao";
-    })
-    contato.addEventListener('click', ()=>{
-        faleConosco.classList.toggle('conosco-show');   
-    })
-
+    const nome = document.getElementById("nome").value
+    const email = document.getElementById("email").value
+    const area = document.getElementById("texto").value
     sendbtn.addEventListener('click', function(){
+
+        if(nome.length === 0 && email.length === 0 && area.length === 0)
+        {
+            alert("Preencha os campos por gentileza!")
+        }
         alert("Obrigado por nos enviar uma mensagem")
-        location.reload();
+        return location.reload();
     })
 
 /*
