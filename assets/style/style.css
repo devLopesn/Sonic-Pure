@@ -208,7 +208,7 @@ header .contact:hover{
     margin-bottom: 2rem;
 }
 
-.card{
+.card-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,6 +339,9 @@ header .contact:hover{
     background-color: #e8e8ee;
     height: auto;
     padding: 2rem;
+}
+.form-body{
+    border-radius: 2rem;
 }
 
 .sobre-title{
@@ -491,7 +494,7 @@ footer{
         flex-direction: column;
     }
 
-    .card{
+    .card-section{
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -571,7 +574,7 @@ footer{
         font-size: 2rem;
     }
 
-    .card{
+    .card-section{
         display: flex;
         flex-direction: column;
         gap: 2rem;

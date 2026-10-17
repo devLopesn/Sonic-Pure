@@ -2,16 +2,17 @@
 
     const nome = document.getElementById("nome").value
     const email = document.getElementById("email").value
-    const area = document.getElementById("texto").value
-    sendbtn.addEventListener('click', function(){
+    const area = document.getElementById("texto")
+    document.getElementById("meuForm", addEventListener('submit', function(event){
+        event.preventDefault()
 
-        if(nome.length === 0 && email.length === 0 && area.length === 0)
-        {
-            alert("Preencha os campos por gentileza!")
-        }
-        alert("Obrigado por nos enviar uma mensagem")
-        return location.reload();
-    })
+        Enviar();
+    }))
+
+    function Enviar()
+    {
+        alert("Assunto Enviado com sucesso.")
+    }
 
 /*
         Efeito de opacidade do menu
